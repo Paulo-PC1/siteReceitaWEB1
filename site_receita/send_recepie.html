@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/send.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <title>Nossas Receitas</title>
+</head>
+<body>
+<!--Site de Receitas Culinárias-->
+<!--Header do site cotendo a barra de navegação entre as outras páginas-->
+<header class="navbar navbar-expand-lg custom-header navbar-dark" aria-label="Cabeçalho">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img class="img-responsive" src="assets/img/logo site.png" alt="Nossas Receitas" width="45px" height="60px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="categories.html" alt="link para a página Categorias">Categorias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="week_recepie.html" alt="link para a página Receita da semana">Receita da Semana</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cook_tips.html" alt="link para a página Dicas Culinárias">Dicas Culinárias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="send_recepie.html" alt="link para a página Enviar Receita">Envie sua Receita!</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="container3">
+<h1>Envie sua Receita</h1>
+
+<form id="form-receita">
+    <label for="nome">Nome do usuário</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="receita">Nome da receita</label>
+    <input type="text" id="receita" name="receita" required>
+
+    <label for="ingredientes">Ingredientes</label>
+    <textarea id="ingredientes" name="ingredientes" required></textarea>
+
+    <label for="preparo">Modo de preparo</label>
+    <textarea id="preparo" name="preparo" required></textarea>
+
+    <button type="submit" class="botao">Enviar</button>
+</form>
+
+    <div class="mensagem-sucesso" id="mensagem">Receita enviada com sucesso! 🎉</div>
+  </div>
+
+    <div class="container-fluid custom-footer py-3 my-4 border-top">
+            <div class="container"> 
+                <footer class="d-flex flex-wrap justify-content-center justify-lg-content-between align-items-center"> 
+                    <p class="col-md-4 mb-0 text-body-secondary order-3 order-lg-1">Lorem ipsum dolor sit amet.</p>      
+                    </a> 
+                    <ul class="nav col-md-4 justify-content-end order-2 order-lg-3">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="categories.html" alt="link para a página Categorias">Categorias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="week_recepie.html" alt="link para a página Receita da semana">Receita da Semana</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cook_tips.html" alt="link para a página Dicas Culinárias">Dicas Culinárias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="send_recepie.html" alt="link para a página Enviar Receita">Envie sua Receita!</a></li>
+                    </ul>
+                </footer> 
+            </div>
+        </div>
+    <script src="assets/js/seen.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

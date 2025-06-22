@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/tips.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <title>Nossas Receitas</title>
+</head>
+<body>
+<!--Site de Receitas Culinárias-->
+<!--Header do site com a barra de navegação entre as paginas-->
+<header class="navbar navbar-expand-lg custom-header navbar-dark" aria-label="Cabeçalho">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img class="img-responsive" src="assets/img/logo site.png" alt="Nossas Receitas" width="45px" height="60px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="categories.html" alt="link para a página Categorias">Categorias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="week_recepie.html" alt="link para a página Receita da semana">Receita da Semana</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="cook_tips.html" alt="link para a página Dicas Culinárias">Dicas Culinárias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="send_recepie.html" alt="link para a página Enviar Receita">Envie sua Receita!</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="container3">
+
+  <div class="artigo">
+    <h2>Como conservar alimentos por mais tempo</h2>
+    <p>Descubra técnicas simples para armazenar legumes, frutas e carnes de forma segura e prolongar sua validade.</p>
+    <button class="botao" onclick="toggleTabela(0)">Leia mais</button>
+    <div class="tabela-info" style="display: none;">
+      <table class="table table-bordered mt-3">
+        <thead class="table-light">
+          <tr>
+            <th>Alimento</th>
+            <th>Duração (dias)</th>
+            <th>Conservação Ideal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Tomate</td><td>7</td><td>Geladeira, gaveta de legumes</td></tr>
+          <tr><td>Carne moída</td><td>2</td><td>Freezer ou resfriamento rápido</td></tr>
+          <tr><td>Alface</td><td>5</td><td>Papel toalha e recipiente fechado</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="artigo">
+    <h2>Substituições em receitas: alternativas inteligentes</h2>
+    <p>Sem ovo? Sem leite? Veja como substituir ingredientes comuns por opções acessíveis como chia ou leite vegetal.</p>
+    <button class="botao" onclick="toggleTabela(1)">Leia mais</button>
+    <div class="tabela-info" style="display: none;">
+      <table class="table table-bordered mt-3">
+        <thead class="table-light">
+          <tr>
+            <th>Ingrediente</th>
+            <th>Substituto</th>
+            <th>Medida Equivalente</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Ovo</td><td>1 colher de chia + 3 colheres de água</td><td>1 ovo</td></tr>
+          <tr><td>Leite</td><td>Bebida vegetal (aveia, soja)</td><td>1:1</td></tr>
+          <tr><td>Manteiga</td><td>Pasta de amendoim ou óleo de coco</td><td>1:1</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="artigo">
+    <h2>Dicas para economizar tempo na cozinha</h2>
+    <p>Prepare refeições mais rápido com essas dicas práticas de organização, utensílios e preparo antecipado.</p>
+    <button class="botao" onclick="toggleTabela(2)">Leia mais</button>
+    <div class="tabela-info" style="display: none;">
+      <table class="table table-bordered mt-3">
+        <thead class="table-light">
+          <tr>
+            <th>Dica</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Separe porções</td><td>Congele alimentos já porcionados para o dia a dia</td></tr>
+          <tr><td>Utensílios certos</td><td>Use descascadores e processadores para acelerar o preparo</td></tr>
+          <tr><td>Planeje o cardápio</td><td>Evita desperdícios e otimiza o tempo de compra/preparo</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+    <div class="container-fluid custom-footer py-3 my-4 border-top">
+            <div class="container"> 
+                <footer class="d-flex flex-wrap justify-content-center justify-lg-content-between align-items-center"> 
+                    <p class="col-md-4 mb-0 text-body-secondary order-3 order-lg-1">Lorem ipsum dolor sit amet.</p>      
+                    </a> 
+                    <ul class="nav col-md-4 justify-content-end order-2 order-lg-3">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="categories.html" alt="link para a página Categorias">Categorias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="week_recepie.html" alt="link para a página Receita da semana">Receita da Semana</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cook_tips.html" alt="link para a página Dicas Culinárias">Dicas Culinárias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="send_recepie.html" alt="link para a página Enviar Receita">Envie sua Receita!</a></li>
+                    </ul>
+                </footer> 
+            </div>
+        </div>
+    <script src="assets/js/tips.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

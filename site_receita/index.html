@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Nossas Receitas</title>
+</head>
+<body>
+<!--Site de Receitas Culinárias-->
+<!--Header do site cotendo a barra de navegação entre as outras páginas-->
+<header class="navbar navbar-expand-lg custom-header navbar-dark" aria-label="Cabeçalho">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img class="img-responsive" src="assets/img/logo site.png" alt="Nossas Receitas" width="45px" height="60px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="categories.html" alt="link para a página Categorias">Categorias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="week_recepie.html" alt="link para a página Receita da semana">Receita da Semana</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cook_tips.html" alt="link para a página Dicas Culinárias">Dicas Culinárias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="send_recepie.html" alt="link para a página Enviar Receita">Envie sua Receita!</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div>
+    <section id="banner" alt="Banner receitas" aria-label="Banner">
+        <div class="background-glass container-fluid">
+            <div class="container d-flex justify-content-center align-items-center">
+                <h1>Descubra receitas incríveis para o seu dia a dia!</h1>
+            </div>
+        </div>
+    </section>
+</div>
+    <main class="container">
+        <section id="recepie">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="assets/img/Bolo chocolate.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Doces</h5>
+                            <p class="card-text">Receitas doces.</p>
+                            <button onclick="window.location.href='categories.html?filtro=doces'" class="btn btn-primary">Veja Mais!!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="assets/img/Salgados.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Salgados</h5>
+                            <p class="card-text">Receitas salgadas</p>
+                            <button onclick="window.location.href='categories.html?filtro=salgados'" class="btn btn-primary">Veja Mais!!</button>
+                        </div>
+                    </div>
+                </div>
+              <div class="col">
+                    <div class="card h-100">
+                        <img src="assets/img/Veganas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Veganas</h5>
+                            <p class="card-text">Receitas veganas.</p>
+                            <button onclick="window.location.href='categories.html?filtro=veganas'" class="btn btn-primary">Veja Mais!!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        
+<div class="container-fluid custom-footer py-3 my-4 border-top">
+            <div class="container"> 
+                <footer class="d-flex flex-wrap justify-content-center justify-lg-content-between align-items-center"> 
+                    <p class="col-md-4 mb-0 text-body-secondary order-3 order-lg-1">Lorem ipsum dolor sit amet.</p>      
+                    </a> 
+                    <ul class="nav col-md-4 justify-content-end order-2 order-lg-3">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="categories.html" alt="link para a página Categorias">Categorias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="week_recepie.html" alt="link para a página Receita da semana">Receita da Semana</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cook_tips.html" alt="link para a página Dicas Culinárias">Dicas Culinárias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="send_recepie.html" alt="link para a página Enviar Receita">Envie sua Receita!</a></li>
+                    </ul>
+                </footer> 
+            </div>
+        </div>
+    <script src="assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+@import url();
+
+*{
+margin: 0;
+padding: 0;
+}
+body{
+    background-image: url("..//img/Comidas.jpg");
+    background-repeat: no-repeat; 
+    background-size:cover;
+}
+.container3 {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #d84315;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.botao {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #f06dda;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background: #ae66f1;
+}
+
+.mensagem-sucesso {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    border-radius: 5px;
+    animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+    .container {
+    padding: 20px;
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/week.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <title>Nossas Receitas</title>
+</head>
+<body>
+<!--Site de Receitas Culinárias-->
+<!--Header do site com a barra de navegação entre as paginas-->
+<header class="navbar navbar-expand-lg custom-header navbar-dark" aria-label="Cabeçalho">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img class="img-responsive" src="assets/img/logo site.png" alt="Nossas Receitas" width="45px" height="60px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="categories.html" alt="link para a página Categorias">Categorias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="week_recepie.html" alt="link para a página Receita da semana">Receita da Semana</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cook_tips.html" alt="link para a página Dicas Culinárias">Dicas Culinárias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="send_recepie.html" alt="link para a página Enviar Receita">Envie sua Receita!</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+   <div class="container2">
+    <h1>Bolo de Chocolate</h1>
+    <img src="assets/img/Bolo chocolate.jpg" class="imagem" alt="Bolo de Chocolate">
+
+    <div class="info">
+      <div>⏱️ Tempo: 45 min</div>
+      <div>👨‍👩‍👧‍👦 Porções: 8</div>
+      <div>⭐ Dificuldade: Média</div>
+    </div>
+
+    <h2>Ingredientes</h2>
+    <ul>
+      <li>2 xícaras de farinha de trigo</li>
+      <li>1 xícara de açúcar</li>
+      <li>3 ovos</li>
+      <li>1 xícara de leite</li>
+      <li>1/2 xícara de óleo</li>
+      <li>1 xícara de chocolate em pó</li>
+      <li>1 colher de fermento</li>
+    </ul>
+
+    <h2>Modo de Preparo</h2>
+    <button class="botao" onclick="mostrarPassos()">Mostrar passo a passo</button>
+    <ol id="passos">
+      <li>Misture os ingredientes secos.</li>
+      <li>Adicione os líquidos aos poucos.</li>
+      <li>Mexa bem até ficar homogêneo.</li>
+      <li>Despeje em uma forma untada.</li>
+      <li>Leve ao forno a 180ºC por 40-45 minutos.</li>
+    </ol>
+  </div>
+
+    <div class="container-fluid custom-footer py-3 my-4 border-top">
+            <div class="container"> 
+                <footer class="d-flex flex-wrap justify-content-center justify-lg-content-between align-items-center"> 
+                    <p class="col-md-4 mb-0 text-body-secondary order-3 order-lg-1">Lorem ipsum dolor sit amet.</p>      
+                    </a> 
+                    <ul class="nav col-md-4 justify-content-end order-2 order-lg-3">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="categories.html" alt="link para a página Categorias">Categorias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="week_recepie.html" alt="link para a página Receita da semana">Receita da Semana</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cook_tips.html" alt="link para a página Dicas Culinárias">Dicas Culinárias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="send_recepie.html" alt="link para a página Enviar Receita">Envie sua Receita!</a></li>
+                    </ul>
+                </footer> 
+            </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/week.js"></script>
+</html>

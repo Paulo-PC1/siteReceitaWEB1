@@ -1,0 +1,77 @@
+@import url();
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+#banner {
+    background-image: url("../img/Comidas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+}
+
+#banner .background-glass {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#banner .container {
+    height: 100%;
+}
+
+#banner h1 {
+    font-size: 5em;
+    color: rgb(255, 255, 255);
+}
+.custom-header {
+    background-color: #f393ee; 
+}
+
+.custom-header .nav-link {
+    color: #ffffff;
+}
+
+.custom-header .nav-link:hover {
+    color: #6563f3;
+}
+.col{
+    padding-top: 20px;
+}
+#recepie .btn-primary{
+    background-color: #f393ee;
+    color: #fff !important;
+    border: none;
+}
+#recepie .btn-primary:hover{
+    background-color: #6563f3;
+    color: #fff !important;
+    border: none;
+}
+footer .text-body-secondary {
+    color: #ffffff !important;
+}
+.custom-footer {
+    background-color: #f393ee; 
+}
+
+.custom-footer .nav-link {
+    color: #ffffff;
+}
+
+.custom-footer .nav-link:hover {
+    color: #6563f3;
+}
