@@ -1,3 +1,5 @@
+// função para exibir mensagem do formulario caso mensagem seja emviada com sucesso
+
 const form = document.getElementById("form-receita");
 const mensagem = document.getElementById("mensagem");
 
@@ -8,7 +10,7 @@ mensagem.style.display = "block";
 
 form.reset();
 
-setTimeout(() => {
+setTimeout(function(){
 mensagem.style.display = "none";
 }, 5000);
 });

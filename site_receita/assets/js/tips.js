@@ -1,10 +1,11 @@
+//função para exibir as tabelas de cada card  e função para a animação de entrada da pagina
 const artigos = document.querySelectorAll('.artigo');
 
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-    if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-    }
+const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
     });
 }, {
     threshold: 0.2

@@ -1,3 +1,4 @@
+//função para funcionalidade do filtro das categorias de receitas
 const botoes = document.querySelectorAll('[data-categoria]');
 const receitas = document.querySelectorAll('.receita');
 
@@ -11,8 +12,9 @@ botoes.forEach(function(botao){
   });
 });
 
+// função para filtrar as receitas pa pagina home que leva direto ao filto aplicado da pagina de categorias
 const urlParams = new URLSearchParams(window.location.search);
-const filtro = urlParams.get('filtro'); // ex: "doces"
+const filtro = urlParams.get('filtro'); 
 
 if (filtro && filtro !== 'todas'){
   const receitas = document.querySelectorAll('.receita');
@@ -21,4 +23,4 @@ if (filtro && filtro !== 'todas'){
       receita.classList.add('escondida');
     }
   });
-}
+};
